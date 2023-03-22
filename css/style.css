@@ -1,29 +1,50 @@
 /* Generale */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     display: flex;
     height: 75px;
     background-color: rgb(38, 167, 242);
     justify-content: space-between;
     align-items: center;
+    padding: 25px;
+    font-size: 20px;
 }
 
-ul{
+ul {
     list-style-type: none;
-    display: flex;
-    gap: 10px;
+    display: none;
+    gap: 15px;
+    
 }
 
 
 /* Header */
 
-ul li  a{
+ul li  a {
     color: #000000;
     text-decoration: none;
+}
+
+#menu-toggle {
+    color: #000000;
+    display: block;
+}
+
+
+/* Media Query */
+
+@media screen and (min-width: 992px) {
+    ul {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
 }
